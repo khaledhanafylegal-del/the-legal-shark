@@ -7,9 +7,9 @@
    1. المتغيرات والألوان الأساسية
    ══════════════════════════════════════════════ */
 :root {
-  --navy: #0a1628;
-  --navy-mid: #112040;
-  --navy-light: #1a3060;
+  --navy: #000000;
+  --navy-mid: #050505;
+  --navy-light: #0a0a0a;
   --gold: #c9a84c;
   --gold-light: #e8c97a;
   --gold-dark: #a07c30;
@@ -64,7 +64,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(10, 22, 40, 0.92);
+  background: rgba(0, 0, 0, 0.92);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(201, 168, 76, 0.2);
   transition: all 0.3s ease;
@@ -72,7 +72,7 @@ nav {
 
 nav.scrolled {
   height: 65px;
-  background: rgba(10, 22, 40, 0.98);
+  background: rgba(0, 0, 0, 0.98);
   border-bottom-color: rgba(201, 168, 76, 0.4);
 }
 
@@ -178,7 +178,7 @@ nav.scrolled .nav-logo img { height: 52px; }
     url('../الصور/خلفية-hero.png') center/cover no-repeat,
     radial-gradient(ellipse at 70% 50%, rgba(139, 26, 26, 0.15) 0%, transparent 60%),
     radial-gradient(ellipse at 20% 80%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
-    linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #0d1f3c 100%);
+    linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #000000 100%);
 }
 
 .hero-grid {
@@ -759,7 +759,7 @@ nav.scrolled .nav-logo img { height: 52px; }
 
 /* ─── SERVICES PAGE ─── */
 .services-hero {
-  background: linear-gradient(135deg, #0d1f3c, var(--navy));
+  background: linear-gradient(135deg, #000000, var(--navy));
   padding: 160px 40px 80px;
   text-align: center;
   position: relative;
@@ -941,7 +941,7 @@ nav.scrolled .nav-logo img { height: 52px; }
 .packages-hero {
   padding: 160px 40px 80px;
   text-align: center;
-  background: linear-gradient(135deg, var(--navy), #0d1f3c);
+  background: linear-gradient(135deg, var(--navy), #000000);
 }
 
 .packages-grid {
@@ -1593,9 +1593,7 @@ footer {
    12. إصلاح الشعار والشفافية (Logo Fix)
    ══════════════════════════════════════════════ */
 
-.nav-logo img,
-.hero-logo-img,
-.footer-brand img {
+.logo-img {
   background: transparent !important;
   mix-blend-mode: screen;
 }
