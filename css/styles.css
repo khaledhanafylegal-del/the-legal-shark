@@ -174,19 +174,21 @@ nav.scrolled .nav-logo img { height: 52px; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: 
-    url('../الصور/خلفية-hero.png') center/cover no-repeat,
-    radial-gradient(ellipse at 70% 50%, rgba(139, 26, 26, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 20% 80%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
-    linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #0d1f3c 100%);
+  background:
+    linear-gradient(
+      135deg,
+      #050B18 0%,
+      #081223 45%,
+      #0B1830 100%
+    );
 }
 
 .hero-grid {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(201,168,76,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.02) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -196,14 +198,16 @@ nav.scrolled .nav-logo img { height: 52px; }
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 40px 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.hero-text { }
-
+.hero-text {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -227,8 +231,8 @@ nav.scrolled .nav-logo img { height: 52px; }
 
 .hero-title {
   font-family: 'Cinzel', serif;
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
-  font-weight: 900;
+font-size: clamp(3.5rem, 8vw, 7rem);
+   font-weight: 900;
   line-height: 1.1;
   color: var(--white-pure);
   margin-bottom: 16px;
@@ -248,13 +252,16 @@ nav.scrolled .nav-logo img { height: 52px; }
   color: var(--gray);
   margin-bottom: 36px;
   line-height: 1.8;
-  max-width: 480px;
+  max-width: 700px;
+margin-right: auto;
+margin-left: auto;
 }
 
 .hero-actions {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -311,8 +318,8 @@ nav.scrolled .nav-logo img { height: 52px; }
   margin-top: 50px;
   padding-top: 40px;
   border-top: 1px solid rgba(201,168,76,0.15);
+  justify-content: center;
 }
-
 .stat-item { text-align: center; }
 
 .stat-number {
