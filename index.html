@@ -1,0 +1,887 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Legal Shark | Hanafy & Sarhan Law Firm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- ═══════════════════════════════════════════
+     رابط ملف الأنماط الخارجي
+     ═══════════════════════════════════════════ -->
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+
+<!-- ─── NAVIGATION ─── -->
+
+<!-- ═══════════════════════════════════════════
+     شريط التنقل الرئيسي
+     ═══════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <img src="الصور/الشعار.png" alt="The Legal Shark Logo" style="background: transparent;">
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">الرئيسية</a></li>
+    <li><a href="#" onclick="showPage('about')" id="nav-about">من نحن</a></li>
+    <li><a href="#" onclick="showPage('services')" id="nav-services">خدماتنا</a></li>
+    <li><a href="#" onclick="showPage('packages')" id="nav-packages">الباقات</a></li>
+    <li><a href="#" onclick="showPage('contact')" class="nav-cta" id="nav-contact">تواصل معنا</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ─── HOME PAGE ─── -->
+
+<!-- ═══════════════════════════════════════════
+     الصفحة الرئيسية (Home)
+     ═══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <section id="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">حنفي وسرحان للمحاماة</div>
+        <h1 class="hero-title">
+          The Legal Shark
+          <span class="accent">محامون للشركات الناشئة</span>
+        </h1>
+        <p class="hero-subtitle">
+          مكتب محاماة متخصص في القانون المصري للأعمال — نؤسّس شركتك، نحمي فكرتك، ونقف معك من البداية حتى النجاح.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn-primary" onclick="showPage('contact')">احجز استشارة مجانية</a>
+          <a href="#" class="btn-secondary" onclick="showPage('services')">استعرض خدماتنا</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">+500</span>
+            <div class="stat-label">شركة مؤسَّسة</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <div class="stat-label">سنوات خبرة</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <div class="stat-label">نسبة رضا العملاء</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <div class="hero-glow"></div>
+          <div class="hero-logo-ring ring-1"></div>
+          <div class="hero-logo-ring ring-2"></div>
+          <img src="الصور/الشعار-hero.png" alt="The Legal Shark Logo" class="hero-logo-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <div style="background: linear-gradient(180deg, transparent, rgba(17,32,64,0.5), transparent);">
+    <div class="section">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">خدماتنا القانونية</span>
+        <h2 class="section-title">كل ما تحتاجه <span class="gold">تحت سقف واحد</span></h2>
+        <p class="section-desc">من تأسيس الشركات إلى حماية الملكية الفكرية — نقدم حلولاً قانونية متكاملة مصممة خصيصاً للشركات الناشئة والأعمال.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" onclick="showPage('services')">
+          <span class="service-icon">🏢</span>
+          <div class="service-title">تأسيس الشركات</div>
+          <p class="service-desc">تأسيس شركات ذات مسؤولية محدودة، مساهمة، فردية، وجميع الأشكال القانونية المعترف بها في مصر.</p>
+          <div class="service-arrow">اعرف أكثر ←</div>
+        </div>
+        <div class="service-card reveal" onclick="showPage('services')">
+          <span class="service-icon">⚖️</span>
+          <div class="service-title">العقود والاتفاقيات</div>
+          <p class="service-desc">صياغة ومراجعة العقود التجارية، اتفاقيات الشراكة، عقود الموردين والعملاء بمعايير قانونية محكمة.</p>
+          <div class="service-arrow">اعرف أكثر ←</div>
+        </div>
+        <div class="service-card reveal" onclick="showPage('services')">
+          <span class="service-icon">💡</span>
+          <div class="service-title">الملكية الفكرية</div>
+          <p class="service-desc">تسجيل العلامات التجارية، براءات الاختراع، حقوق النشر، وحماية هويتك التجارية من الانتهاك.</p>
+          <div class="service-arrow">اعرف أكثر ←</div>
+        </div>
+        <div class="service-card reveal" onclick="showPage('services')">
+          <span class="service-icon">📊</span>
+          <div class="service-title">الامتثال والحوكمة</div>
+          <p class="service-desc">ضمان امتثال شركتك لمتطلبات القانون المصري، قانون الاستثمار، والسجل التجاري.</p>
+          <div class="service-arrow">اعرف أكثر ←</div>
+        </div>
+        <div class="service-card reveal" onclick="showPage('services')">
+          <span class="service-icon">💼</span>
+          <div class="service-title">صفقات الاستثمار</div>
+          <p class="service-desc">هيكلة جولات التمويل، عقود المستثمرين، term sheets، وكل ما يتعلق بنمو شركتك مالياً.</p>
+          <div class="service-arrow">اعرف أكثر ←</div>
+        </div>
+        <div class="service-card reveal" onclick="showPage('services')">
+          <span class="service-icon">🛡️</span>
+          <div class="service-title">النزاعات التجارية</div>
+          <p class="service-desc">تمثيل قانوني أمام المحاكم والتحكيم التجاري، حماية حقوقك وحل النزاعات بأعلى كفاءة.</p>
+          <div class="service-arrow">اعرف أكثر ←</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Us -->
+  <div class="why-section">
+    <div class="section">
+      <div class="why-grid">
+        <div class="why-text reveal">
+          <span class="section-eyebrow">لماذا نحن؟</span>
+          <h2 class="section-title">محامون يفهمون <span class="gold">لغة الأعمال</span></h2>
+          <p>نحن لسنا مجرد مكتب محاماة — نحن شريك استراتيجي يفهم تحديات ريادة الأعمال في مصر. نتحدث لغتك، نحترم وقتك، ونقدم حلولاً عملية لا جلسات تنظير.</p>
+          <p>فريقنا من المحامين المتخصصين يجمع بين الخبرة القانونية العميقة ومعرفة بيئة الأعمال المصرية والإقليمية.</p>
+          <div class="why-items">
+            <div class="why-item"><div class="why-check">✓</div><div class="why-item-text">ردود خلال 24 ساعة مضمونة</div></div>
+            <div class="why-item"><div class="why-check">✓</div><div class="why-item-text">أسعار شفافة بدون مفاجآت</div></div>
+            <div class="why-item"><div class="why-check">✓</div><div class="why-item-text">متخصصون في الشركات الناشئة</div></div>
+            <div class="why-item"><div class="why-check">✓</div><div class="why-item-text">استشارة أولى مجانية</div></div>
+            <div class="why-item"><div class="why-check">✓</div><div class="why-item-text">متابعة مستمرة بعد التأسيس</div></div>
+            <div class="why-item"><div class="why-check">✓</div><div class="why-item-text">خبرة في قانون الاستثمار</div></div>
+          </div>
+        </div>
+        <div class="why-visual reveal">
+          <div class="testimonial-card">
+            <p class="testimonial-text">فريق The Legal Shark أسّس شركتنا في أقل من أسبوعين، وقدّموا مشورة قانونية ساعدتنا في إغلاق جولة تمويلنا الأولى بنجاح. محترفون حقيقيون.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">م.أ</div>
+              <div>
+                <div class="author-name">محمد أحمد</div>
+                <div class="author-role">مؤسس شركة FinTech</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="padding: 80px 40px; text-align: center; background: linear-gradient(135deg, rgba(17,32,64,0.8), rgba(10,22,40,0.9));">
+    <div class="reveal">
+      <span class="section-eyebrow" style="margin-bottom:16px; display:block;">ابدأ رحلتك القانونية</span>
+      <h2 class="section-title">جاهز تأسّس شركتك؟<br><span class="gold">نحن هنا من اليوم الأول</span></h2>
+      <p style="color:var(--gray); margin: 20px auto 36px; max-width: 500px; line-height: 1.8;">احجز استشارة مجانية الآن مع أحد محامينا المتخصصين وابدأ رحلتك بثقة.</p>
+      <a href="#" class="btn-primary" onclick="showPage('contact')">🗓️ احجز استشارة مجانية</a>
+    </div>
+  </div>
+</div>
+
+<!-- ─── ABOUT PAGE ─── -->
+
+<!-- ═══════════════════════════════════════════
+     صفحة من نحن (About)
+     ═══════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="about-hero">
+    <div class="about-hero-content">
+      <div class="reveal">
+        <span class="section-eyebrow">من نحن</span>
+        <h1 class="section-title">The Legal Shark<br><span class="gold">حنفي وسرحان للمحاماة</span></h1>
+        <div class="divider" style="margin: 20px 0;"></div>
+        <p style="color: var(--gray); line-height: 1.9; font-size: 0.95rem; margin-bottom: 20px;">
+          The Legal Shark هو اسم المنصة القانونية لمكتب حنفي وسرحان للمحاماة — مكتب متخصص في تقديم الخدمات القانونية للشركات الناشئة والأعمال في مصر.
+        </p>
+        <p style="color: var(--gray); line-height: 1.9; font-size: 0.95rem;">
+          تأسّسنا بهدف واضح: تغيير الصورة النمطية عن مكاتب المحاماة وتقديم خدمة قانونية عصرية، سريعة، وبأسعار شفافة تناسب روح الشركات الناشئة.
+        </p>
+      </div>
+      <div class="reveal" style="display:flex; align-items:center; justify-content:center;">
+        <img src="الصور/الشعار-about.png" alt="The Legal Shark Logo" style="width:260px; filter:drop-shadow(0 0 30px rgba(201,168,76,0.4));">
+      </div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <!-- ─── CSS لبطاقات الفريق المحسّنة ─── -->
+  <style>
+  .team-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px 40px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  @media (max-width: 900px) {
+    .team-grid-2 { grid-template-columns: 1fr; }
+  }
+  .team-card-v3 {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.35s;
+    position: relative;
+  }
+  .team-card-v3:hover {
+    border-color: rgba(201,168,76,0.6);
+    transform: translateY(-8px);
+    box-shadow: 0 32px 60px rgba(0,0,0,0.4), 0 0 40px rgba(201,168,76,0.1);
+  }
+  .team-card-v3 .card-photo {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: rgba(10,22,40,0.6);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+  .team-card-v3 .card-body {
+    padding: 32px 28px 36px;
+  }
+  .team-card-v3 .card-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #a07c30, #e8c97a);
+    color: #0a1628;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  .team-card-v3 .card-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  .team-card-v3 .card-title {
+    font-size: 0.82rem;
+    color: #c9a84c;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+  .team-card-v3 .card-divider {
+    width: 50px; height: 2px;
+    background: linear-gradient(90deg, #a07c30, #e8c97a);
+    border-radius: 2px;
+    margin-bottom: 18px;
+  }
+  .team-card-v3 .card-bio {
+    font-size: 0.88rem;
+    color: #8a9ab5;
+    line-height: 1.9;
+    margin-bottom: 14px;
+  }
+  .team-card-v3 .card-bio strong {
+    color: #e8c97a;
+  }
+  .team-card-v3 .card-traits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 20px;
+  }
+  .team-card-v3 .trait {
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.22);
+    color: #e8c97a;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+  </style>
+
+  <div class="team-grid-2">
+
+    <!-- أحمد سرحان - المؤسس / المدير القانوني -->
+    <div class="team-card-v3 reveal">
+      <img src="الصور/مؤسس-سرحان.png" alt="أحمد سرحان" class="card-photo">
+      <div class="card-body">
+        <span class="card-badge">⚖️ مؤسس ومدير قانوني</span>
+        <div class="card-name">أحمد سرحان</div>
+        <div class="card-title">المدير القانوني | Senior Partner</div>
+        <div class="card-divider"></div>
+        <p class="card-bio">محامٍ بالاستئناف العالي ومجلس الدولة، يمتلك خبرة تتجاوز <strong>15 عامًا</strong> في المحاماة والاستشارات القانونية المتخصصة.</p>
+        <p class="card-bio">يقود الجانب القانوني بالشركة، متخصص في قضايا <strong>الشركات، العقود التجارية، المنازعات الاقتصادية، وحوكمة الشركات</strong>. يعمل على تقديم حلول قانونية احترافية تساعد الشركات على النمو بأمان واستقرار.</p>
+        <p class="card-bio">يرتكز أسلوبه على: <strong>الاحترافية، السرية التامة، الدقة في التفاصيل، وسرعة الإنجاز.</strong></p>
+        <div class="card-traits">
+          <span class="trait">15+ سنة خبرة</span>
+          <span class="trait">محكمة الاستئناف العالي</span>
+          <span class="trait">مجلس الدولة</span>
+          <span class="trait">قانون الشركات</span>
+          <span class="trait">المنازعات التجارية</span>
+          <span class="trait">حوكمة الشركات</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- خالد حنفي - المؤسس / الشريك الإداري -->
+    <div class="team-card-v3 reveal">
+      <img src="الصور/مؤسس-حنفي.png" alt="خالد حنفي" class="card-photo">
+      <div class="card-body">
+        <span class="card-badge">🏢 مؤسس وشريك إداري</span>
+        <div class="card-name">خالد حنفي</div>
+        <div class="card-title">الشريك الإداري | Managing Partner</div>
+        <div class="card-divider"></div>
+        <p class="card-bio">خبير في <strong>قوانين الشركات وإدارة الأعمال</strong>، يرأس مؤسسة متخصصة في التمكين الاقتصادي ودعم المشروعات الصغيرة والمتوسطة.</p>
+        <p class="card-bio">ساهم في تأسيس وإدارة عدد من المشروعات والشركات الناجحة، ويعمل على تطوير <strong>الحلول القانونية والتقنية</strong> التي تساعد رواد الأعمال والشركات الناشئة على إدارة أعمالهم بصورة أكثر كفاءة.</p>
+        <p class="card-bio">مسؤول عن <strong>التطوير المؤسسي، الشراكات الاستراتيجية، وبناء نماذج الأعمال القانونية</strong> المناسبة لكل مرحلة نمو.</p>
+        <div class="card-traits">
+          <span class="trait">إدارة الأعمال</span>
+          <span class="trait">الشركات الناشئة</span>
+          <span class="trait">التمكين الاقتصادي</span>
+          <span class="trait">الملكية الفكرية</span>
+          <span class="trait">الشراكات الاستراتيجية</span>
+          <span class="trait">قانون الاستثمار</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Values -->
+  <div style="padding: 20px 40px 60px; max-width: 1200px; margin: 0 auto;">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">قيمنا</span>
+      <h2 class="section-title">ما يميّزنا</h2>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="values-grid">
+    <div class="value-card reveal">
+      <span class="value-icon">⚡</span>
+      <div class="value-title">السرعة</div>
+      <p class="value-text">نؤمن بأن وقتك ثمين. نلتزم بالمواعيد ونقدم الخدمة في أسرع وقت ممكن دون التنازل عن الجودة.</p>
+    </div>
+    <div class="value-card reveal">
+      <span class="value-icon">🎯</span>
+      <div class="value-title">الدقة</div>
+      <p class="value-text">كل وثيقة، كل عقد، كل إجراء — نتعامل معه بدقة متناهية لأننا نعرف أن التفاصيل القانونية مهمة.</p>
+    </div>
+    <div class="value-card reveal">
+      <span class="value-icon">🤝</span>
+      <div class="value-title">الشراكة الحقيقية</div>
+      <p class="value-text">لسنا مجرد محامين تستأجرهم — نحن شركاؤك الاستراتيجيون الذين يفكرون في مصلحة أعمالك أولاً.</p>
+    </div>
+  </div>
+
+  <!-- Mission -->
+  <div style="padding: 40px 40px 100px; max-width: 1200px; margin: 0 auto;">
+    <div class="reveal" style="background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 12px; padding: 50px; text-align: center;">
+      <span style="font-size: 3rem; display:block; margin-bottom: 20px;">⚖️</span>
+      <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold-light); margin-bottom: 16px;">رسالتنا</h3>
+      <p style="color: var(--gray); max-width: 700px; margin: 0 auto; line-height: 2; font-size: 1rem;">
+        تقديم خدمة قانونية عالية الجودة مصممة خصيصاً للشركات الناشئة والأعمال في مصر — بأسلوب عصري، بأسعار عادلة، وبشراكة حقيقية تتجاوز حدود مكتب المحاماة التقليدي.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SERVICES PAGE ─── -->
+
+<!-- ═══════════════════════════════════════════
+     صفحة الخدمات (Services)
+     ═══════════════════════════════════════════ -->
+<div class="page" id="page-services">
+  <div class="services-hero">
+    <span class="section-eyebrow">خدماتنا القانونية</span>
+    <h1 class="section-title reveal">حلول قانونية متكاملة<br><span class="gold">للشركات والأعمال</span></h1>
+    <p class="section-desc reveal" style="margin: 16px auto 0;">نقدم طيفاً واسعاً من الخدمات القانونية المتخصصة — من التأسيس حتى حماية حقوقك في كل مرحلة.</p>
+  </div>
+
+  <div class="services-tabs">
+    <button class="tab-btn active" onclick="showService('founding')">🏢 تأسيس الشركات</button>
+    <button class="tab-btn" onclick="showService('contracts')">⚖️ العقود</button>
+    <button class="tab-btn" onclick="showService('ip')">💡 الملكية الفكرية</button>
+    <button class="tab-btn" onclick="showService('compliance')">📊 الامتثال</button>
+    <button class="tab-btn" onclick="showService('investment')">💼 الاستثمار</button>
+    <button class="tab-btn" onclick="showService('disputes')">🛡️ النزاعات</button>
+  </div>
+
+  <div class="services-detail">
+    <!-- Founding -->
+    <div class="service-detail-block active" id="service-founding">
+      <div class="service-detail-info">
+        <span class="service-detail-icon">🏢</span>
+        <h2 class="service-detail-title">تأسيس الشركات</h2>
+        <p class="service-detail-desc">نساعدك في اختيار الشكل القانوني المناسب لفكرتك والإجراءات القانونية الكاملة لتأسيس شركتك في مصر وفقاً لأحدث متطلبات القانون التجاري المصري.</p>
+        <ul class="service-sub-list">
+          <li>شركة ذات مسؤولية محدودة (LLC)</li>
+          <li>شركة المساهمة المصرية (SAE)</li>
+          <li>المنشأة الفردية وشركة الشخص الواحد</li>
+          <li>شركات القطاع الخاص وفق قانون الاستثمار</li>
+          <li>فروع الشركات الأجنبية في مصر</li>
+          <li>الجمعيات المهنية والكيانات غير الربحية</li>
+        </ul>
+      </div>
+      <div class="service-process">
+        <h3 class="process-title">الخطوات معنا</h3>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <div class="step-title">استشارة مجانية</div>
+              <p class="step-desc">جلسة أولى مجانية لفهم فكرتك وتحديد الشكل القانوني الأنسب لنشاطك.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <div class="step-title">إعداد الوثائق</div>
+              <p class="step-desc">إعداد عقد التأسيس والنظام الأساسي وجميع المستندات المطلوبة.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <div class="step-title">التوثيق الرسمي</div>
+              <p class="step-desc">استكمال إجراءات التوثيق لدى الشهر العقاري والجهات المختصة.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <div class="step-content">
+              <div class="step-title">القيد التجاري</div>
+              <p class="step-desc">قيد الشركة في السجل التجاري والحصول على جميع التراخيص اللازمة.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">05</div>
+            <div class="step-content">
+              <div class="step-title">التسليم والمتابعة</div>
+              <p class="step-desc">تسليم جميع وثائق الشركة ومتابعة ما بعد التأسيس.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contracts -->
+    <div class="service-detail-block" id="service-contracts">
+      <div class="service-detail-info">
+        <span class="service-detail-icon">⚖️</span>
+        <h2 class="service-detail-title">العقود والاتفاقيات</h2>
+        <p class="service-detail-desc">صياغة عقود تجارية محكمة تحمي حقوقك وتضمن وضوح العلاقة مع الشركاء والعملاء والموردين.</p>
+        <ul class="service-sub-list">
+          <li>عقود الشراكة وتوزيع الأسهم</li>
+          <li>عقود الموردين والعملاء</li>
+          <li>اتفاقيات عدم المنافسة والسرية (NDA)</li>
+          <li>عقود التوزيع والوكالة التجارية</li>
+          <li>عقود الموظفين والمستشارين</li>
+          <li>مراجعة العقود المقدمة لك وتحليل المخاطر</li>
+        </ul>
+      </div>
+      <div class="service-process">
+        <h3 class="process-title">آلية العمل</h3>
+        <div class="process-steps">
+          <div class="process-step"><div class="step-num">01</div><div class="step-content"><div class="step-title">فهم احتياجاتك</div><p class="step-desc">نستمع إلى طبيعة العلاقة التجارية لتصميم العقد المناسب.</p></div></div>
+          <div class="process-step"><div class="step-num">02</div><div class="step-content"><div class="step-title">الصياغة القانونية</div><p class="step-desc">صياغة العقد بلغة قانونية دقيقة تحمي مصالحك.</p></div></div>
+          <div class="process-step"><div class="step-num">03</div><div class="step-content"><div class="step-title">المراجعة والتعديل</div><p class="step-desc">مراجعة مشتركة مع تعديلات حتى الرضا التام.</p></div></div>
+          <div class="process-step"><div class="step-num">04</div><div class="step-content"><div class="step-title">التوثيق النهائي</div><p class="step-desc">توثيق العقد قانونياً وتسليم النسخ الرسمية.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IP -->
+    <div class="service-detail-block" id="service-ip">
+      <div class="service-detail-info">
+        <span class="service-detail-icon">💡</span>
+        <h2 class="service-detail-title">الملكية الفكرية</h2>
+        <p class="service-detail-desc">احمِ إبداعك وهويتك التجارية من أول يوم. ملكيتك الفكرية هي أثمن ما تملكه.</p>
+        <ul class="service-sub-list">
+          <li>تسجيل العلامات التجارية لدى مصلحة التسجيل</li>
+          <li>براءات الاختراع والنماذج الصناعية</li>
+          <li>حقوق النشر للبرمجيات والمحتوى</li>
+          <li>الدفاع ضد انتهاك الملكية الفكرية</li>
+          <li>اتفاقيات ترخيص الاستخدام</li>
+          <li>تسجيل العلامات على المستوى الدولي (مدريد)</li>
+        </ul>
+      </div>
+      <div class="service-process">
+        <h3 class="process-title">مسار التسجيل</h3>
+        <div class="process-steps">
+          <div class="process-step"><div class="step-num">01</div><div class="step-content"><div class="step-title">البحث والتدقيق</div><p class="step-desc">بحث شامل للتأكد من عدم وجود تعارض مع علامات مسجلة.</p></div></div>
+          <div class="process-step"><div class="step-num">02</div><div class="step-content"><div class="step-title">إعداد الطلب</div><p class="step-desc">إعداد ملف الطلب الكامل وفق متطلبات مكتب الملكية الفكرية.</p></div></div>
+          <div class="process-step"><div class="step-num">03</div><div class="step-content"><div class="step-title">التقديم والمتابعة</div><p class="step-desc">تقديم الطلب ومتابعة مراحل الفحص والاعتراض.</p></div></div>
+          <div class="process-step"><div class="step-num">04</div><div class="step-content"><div class="step-title">الحصول على الشهادة</div><p class="step-desc">استلام شهادة التسجيل الرسمية وتوثيق حقوقك.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compliance -->
+    <div class="service-detail-block" id="service-compliance">
+      <div class="service-detail-info">
+        <span class="service-detail-icon">📊</span>
+        <h2 class="service-detail-title">الامتثال والحوكمة</h2>
+        <p class="service-detail-desc">البقاء في الإطار القانوني ليس خياراً — نساعدك على الامتثال الكامل لمتطلبات القانون المصري وتجنب العقوبات.</p>
+        <ul class="service-sub-list">
+          <li>مراجعة الامتثال لقانون الاستثمار رقم 72/2017</li>
+          <li>متطلبات السجل التجاري والتجديد السنوي</li>
+          <li>الامتثال لقانون حماية البيانات الشخصية</li>
+          <li>متطلبات هيئة الرقابة المالية للشركات المالية</li>
+          <li>سياسات مكافحة غسل الأموال (AML)</li>
+          <li>تقارير الحوكمة لمجالس الإدارة</li>
+        </ul>
+      </div>
+      <div class="service-process">
+        <h3 class="process-title">برنامج الامتثال</h3>
+        <div class="process-steps">
+          <div class="process-step"><div class="step-num">01</div><div class="step-content"><div class="step-title">تقييم الوضع الراهن</div><p class="step-desc">مراجعة شاملة لوضع شركتك القانوني وتحديد نقاط المخاطرة.</p></div></div>
+          <div class="process-step"><div class="step-num">02</div><div class="step-content"><div class="step-title">خطة العلاج</div><p class="step-desc">وضع خطة زمنية لمعالجة الثغرات وتحقيق الامتثال الكامل.</p></div></div>
+          <div class="process-step"><div class="step-num">03</div><div class="step-content"><div class="step-title">التطبيق والمرافقة</div><p class="step-desc">مرافقة شركتك في تطبيق متطلبات الامتثال خطوة بخطوة.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Investment -->
+    <div class="service-detail-block" id="service-investment">
+      <div class="service-detail-info">
+        <span class="service-detail-icon">💼</span>
+        <h2 class="service-detail-title">صفقات الاستثمار</h2>
+        <p class="service-detail-desc">هيكلة جولات التمويل بطريقة تحمي حصتك وتجذب المستثمرين — من Seed حتى Series B وما بعدها.</p>
+        <ul class="service-sub-list">
+          <li>هيكلة SAFE وConvertible Notes</li>
+          <li>صياغة Term Sheets</li>
+          <li>عقود المساهمين وشروط التصويت</li>
+          <li>اتفاقيات Vesting وESOPs</li>
+          <li>Due Diligence القانوني للمستثمرين</li>
+          <li>عقود الاندماج والاستحواذ (M&A)</li>
+        </ul>
+      </div>
+      <div class="service-process">
+        <h3 class="process-title">مسار الاستثمار</h3>
+        <div class="process-steps">
+          <div class="process-step"><div class="step-num">01</div><div class="step-content"><div class="step-title">التحضير للجولة</div><p class="step-desc">مراجعة هيكل الشركة وتجهيز الوثائق القانونية للمستثمرين.</p></div></div>
+          <div class="process-step"><div class="step-num">02</div><div class="step-content"><div class="step-title">التفاوض والهيكلة</div><p class="step-desc">دعم قانوني في التفاوض على شروط الاستثمار وحماية مصالحك.</p></div></div>
+          <div class="process-step"><div class="step-num">03</div><div class="step-content"><div class="step-title">إغلاق الصفقة</div><p class="step-desc">إتمام كافة الإجراءات القانونية لإغلاق الجولة رسمياً.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disputes -->
+    <div class="service-detail-block" id="service-disputes">
+      <div class="service-detail-info">
+        <span class="service-detail-icon">🛡️</span>
+        <h2 class="service-detail-title">النزاعات التجارية</h2>
+        <p class="service-detail-desc">عندما تصل الأمور إلى المحكمة أو التحكيم، تحتاج إلى محامٍ شرس — The Legal Shark هو اختيارك.</p>
+        <ul class="service-sub-list">
+          <li>التمثيل أمام المحاكم التجارية المصرية</li>
+          <li>التحكيم التجاري المحلي والدولي (CRCICA)</li>
+          <li>نزاعات العقود والشراكات</li>
+          <li>نزاعات الملكية الفكرية والعلامات التجارية</li>
+          <li>قضايا الديون وأوامر الأداء</li>
+          <li>الوساطة والتسوية الودية</li>
+        </ul>
+      </div>
+      <div class="service-process">
+        <h3 class="process-title">استراتيجية الدفاع</h3>
+        <div class="process-steps">
+          <div class="process-step"><div class="step-num">01</div><div class="step-content"><div class="step-title">تقييم القضية</div><p class="step-desc">تحليل قانوني شامل لنقاط القوة والضعف وتحديد أفضل استراتيجية.</p></div></div>
+          <div class="process-step"><div class="step-num">02</div><div class="step-content"><div class="step-title">التسوية الودية</div><p class="step-desc">محاولة التسوية خارج المحكمة لتوفير الوقت والتكلفة.</p></div></div>
+          <div class="process-step"><div class="step-num">03</div><div class="step-content"><div class="step-title">المرافعة القانونية</div><p class="step-desc">تمثيل قانوني قوي أمام المحاكم حتى صدور الحكم النهائي.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 0 40px 80px; text-align: center;">
+    <a href="#" class="btn-primary reveal" onclick="showPage('contact')">🗓️ احجز استشارة مجانية</a>
+  </div>
+</div>
+
+<!-- ─── PACKAGES PAGE ─── -->
+
+<!-- ═══════════════════════════════════════════
+     صفحة الباقات (Packages)
+     ═══════════════════════════════════════════ -->
+<div class="page" id="page-packages">
+  <div class="packages-hero">
+    <span class="section-eyebrow">باقاتنا</span>
+    <h1 class="section-title reveal">اختر الباقة المناسبة لك</h1>
+    <p class="section-desc reveal" style="margin: 16px auto 0;">أسعار شفافة وواضحة — لا مفاجآت، لا رسوم خفية. كل باقة مصممة لمرحلة معينة من رحلتك.</p>
+  </div>
+
+  <div class="packages-grid">
+    <!-- Starter -->
+    <div class="package-card reveal">
+      <div class="package-tier">Starter</div>
+      <div class="package-name">القرش الصغير</div>
+      <p class="package-tagline">مثالية للمشاريع في مراحلها الأولى والأفراد الذين يريدون البدء بسرعة.</p>
+      <div class="package-price">
+        <span class="price-label">يبدأ من</span>
+        <span class="price-amount">2,500 جنيه</span>
+        <span class="price-note">لخدمة التأسيس الأساسية</span>
+      </div>
+      <ul class="package-features">
+        <li><span class="feature-check">◆</span> تأسيس شركة ذ.م.م (LLC)</li>
+        <li><span class="feature-check">◆</span> عقد التأسيس والنظام الأساسي</li>
+        <li><span class="feature-check">◆</span> القيد في السجل التجاري</li>
+        <li><span class="feature-check">◆</span> استشارة قانونية أولى (ساعة)</li>
+        <li><span class="feature-check">◆</span> تسليم خلال 10 أيام عمل</li>
+        <li><span class="feature-x">✕</span> مراجعة العقود مشمولة</li>
+        <li><span class="feature-x">✕</span> دعم قانوني جاري</li>
+        <li><span class="feature-x">✕</span> تسجيل علامة تجارية</li>
+      </ul>
+      <button class="package-cta" onclick="showPage('contact')">ابدأ الآن</button>
+    </div>
+
+    <!-- Growth -->
+    <div class="package-card featured reveal">
+      <div class="featured-badge">⭐ الأكثر طلباً</div>
+      <div class="package-tier">Growth</div>
+      <div class="package-name">القرش الأزرق</div>
+      <p class="package-tagline">للشركات الناشئة الجادة التي تريد أساساً قانونياً متكاملاً منذ البداية.</p>
+      <div class="package-price">
+        <span class="price-label">يبدأ من</span>
+        <span class="price-amount">7,500 جنيه</span>
+        <span class="price-note">باقة متكاملة للتأسيس</span>
+      </div>
+      <ul class="package-features">
+        <li><span class="feature-check">◆</span> تأسيس الشركة بجميع أشكالها</li>
+        <li><span class="feature-check">◆</span> عقد تأسيس + نظام أساسي محكم</li>
+        <li><span class="feature-check">◆</span> السجل التجاري + جميع التراخيص</li>
+        <li><span class="feature-check">◆</span> تسجيل علامة تجارية واحدة</li>
+        <li><span class="feature-check">◆</span> مراجعة 3 عقود تجارية</li>
+        <li><span class="feature-check">◆</span> استشارات شهرية (ساعتان)</li>
+        <li><span class="feature-check">◆</span> تسليم خلال 7 أيام عمل</li>
+        <li><span class="feature-x">✕</span> خدمة Retainer القانونية</li>
+      </ul>
+      <button class="package-cta" onclick="showPage('contact')">ابدأ الآن</button>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="package-card reveal">
+      <div class="package-tier">Enterprise</div>
+      <div class="package-name">القرش الأبيض</div>
+      <p class="package-tagline">للشركات التي تحتاج شريكاً قانونياً دائماً يرافقها في كل قرار.</p>
+      <div class="package-price">
+        <span class="price-label">يبدأ من</span>
+        <span class="price-amount">25,000 جنيه</span>
+        <span class="price-note">سنوياً (Retainer)</span>
+      </div>
+      <ul class="package-features">
+        <li><span class="feature-check">◆</span> كل ما في باقة Growth</li>
+        <li><span class="feature-check">◆</span> خدمة Retainer قانوني شاملة</li>
+        <li><span class="feature-check">◆</span> مراجعة عقود غير محدودة</li>
+        <li><span class="feature-check">◆</span> تسجيل علامات تجارية (3 سنوياً)</li>
+        <li><span class="feature-check">◆</span> دعم صفقات الاستثمار</li>
+        <li><span class="feature-check">◆</span> أولوية في الردود (خلال ساعتين)</li>
+        <li><span class="feature-check">◆</span> اجتماع شهري مع الشريك</li>
+        <li><span class="feature-check">◆</span> تمثيل أمام المحاكم مشمول</li>
+      </ul>
+      <button class="package-cta" onclick="showPage('contact')">تواصل معنا</button>
+    </div>
+  </div>
+
+  <!-- Compare Table -->
+  <div class="packages-compare">
+    <h3 class="compare-title reveal">مقارنة شاملة بين الباقات</h3>
+    <div class="reveal" style="overflow-x: auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th style="text-align:right; width: 35%;">الخدمة</th>
+            <th>القرش الصغير</th>
+            <th style="color: var(--gold-light);">القرش الأزرق ⭐</th>
+            <th>القرش الأبيض</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>تأسيس الشركة</td><td>✓ أساسي</td><td>✓ متكامل</td><td>✓ متكامل</td></tr>
+          <tr><td>تسجيل علامة تجارية</td><td>—</td><td>✓ واحدة</td><td>✓ 3 سنوياً</td></tr>
+          <tr><td>مراجعة العقود</td><td>—</td><td>✓ 3 عقود</td><td>✓ غير محدود</td></tr>
+          <tr><td>الاستشارات الشهرية</td><td>ساعة واحدة</td><td>ساعتان</td><td>غير محدود</td></tr>
+          <tr><td>وقت التسليم</td><td>10 أيام</td><td>7 أيام</td><td>5 أيام</td></tr>
+          <tr><td>دعم الاستثمار</td><td>—</td><td>—</td><td>✓</td></tr>
+          <tr><td>التمثيل القضائي</td><td>—</td><td>—</td><td>✓</td></tr>
+          <tr><td>أولوية الاستجابة</td><td>48 ساعة</td><td>24 ساعة</td><td>ساعتان</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="padding: 20px 40px 80px; text-align: center;">
+    <p class="reveal" style="color: var(--gray); margin-bottom: 24px; line-height: 1.8;">هل لديك احتياجات مختلفة؟ نصمم باقات مخصصة لك.<br>تواصل معنا وسنجد الحل المناسب لميزانيتك.</p>
+    <a href="#" class="btn-primary reveal" onclick="showPage('contact')">احجز استشارة مجانية</a>
+  </div>
+</div>
+
+<!-- ─── CONTACT PAGE ─── -->
+
+<!-- ═══════════════════════════════════════════
+     صفحة التواصل (Contact)
+     ═══════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="contact-hero">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <span class="section-eyebrow reveal">تواصل معنا</span>
+      <h1 class="section-title reveal">نحن هنا لمساعدتك</h1>
+      <div class="divider reveal" style="margin: 20px 0;"></div>
+      <p class="section-desc reveal" style="margin: 0; text-align: right;">ابدأ باستشارة مجانية. فريقنا جاهز للرد خلال 24 ساعة.</p>
+    </div>
+  </div>
+
+  <div class="contact-layout">
+    <div class="contact-info reveal">
+      <h3>معلومات التواصل</h3>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-item-title">العنوان</div>
+            <div class="contact-item-value">القاهرة، مصر<br>المنطقة المالية والتجارية</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-item-title">الهاتف</div>
+            <div class="contact-item-value">+20 100 000 0000<br>+20 100 000 0001</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-item-title">البريد الإلكتروني</div>
+            <div class="contact-item-value">info@thelegalshark.com<br>legal@thelegalshark.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <div class="contact-item-title">أوقات العمل</div>
+            <div class="contact-item-value">السبت – الخميس: 9ص – 6م<br>استشارة طارئة: 24/7</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-item-title" style="margin-bottom: 12px;">تابعنا على</div>
+        <div class="social-links">
+          <a class="social-link" title="LinkedIn">in</a>
+          <a class="social-link" title="Facebook">f</a>
+          <a class="social-link" title="Instagram">ig</a>
+          <a class="social-link" title="WhatsApp">w</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal">
+      <h3 class="form-title">احجز استشارتك المجانية</h3>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>الاسم الكامل</label>
+          <input type="text" placeholder="أدخل اسمك">
+        </div>
+        <div class="form-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" placeholder="example@email.com">
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>رقم الهاتف</label>
+          <input type="tel" placeholder="+20 100 000 0000" dir="ltr">
+        </div>
+        <div class="form-group">
+          <label>الخدمة المطلوبة</label>
+          <select>
+            <option value="">اختر الخدمة...</option>
+            <option>تأسيس شركة</option>
+            <option>صياغة عقود</option>
+            <option>الملكية الفكرية</option>
+            <option>الامتثال القانوني</option>
+            <option>صفقة استثمار</option>
+            <option>نزاع تجاري</option>
+            <option>أخرى</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>نوع الباقة</label>
+        <select>
+          <option value="">اختر الباقة...</option>
+          <option>القرش الصغير (Starter)</option>
+          <option>القرش الأزرق (Growth) - الأكثر طلباً</option>
+          <option>القرش الأبيض (Enterprise)</option>
+          <option>باقة مخصصة</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>تفاصيل طلبك</label>
+        <textarea placeholder="أخبرنا عن مشروعك واحتياجاتك القانونية..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">🗓️ إرسال الطلب وحجز الاستشارة</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+
+<!-- ═══════════════════════════════════════════
+     الفوتر (Footer)
+     ═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="الصور/الشعار-footer.png" alt="The Legal Shark Logo">
+      <p>مكتب متخصص في القانون المصري للأعمال والشركات الناشئة — حنفي وسرحان للمحاماة.</p>
+    </div>
+    <div class="footer-col">
+      <h4>الصفحات</h4>
+      <ul>
+        <li><a onclick="showPage('home')">الرئيسية</a></li>
+        <li><a onclick="showPage('about')">من نحن</a></li>
+        <li><a onclick="showPage('services')">خدماتنا</a></li>
+        <li><a onclick="showPage('packages')">الباقات</a></li>
+        <li><a onclick="showPage('contact')">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>خدماتنا</h4>
+      <ul>
+        <li><a onclick="showPage('services')">تأسيس الشركات</a></li>
+        <li><a onclick="showPage('services')">العقود التجارية</a></li>
+        <li><a onclick="showPage('services')">الملكية الفكرية</a></li>
+        <li><a onclick="showPage('services')">صفقات الاستثمار</a></li>
+        <li><a onclick="showPage('services')">النزاعات التجارية</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>تواصل</h4>
+      <ul>
+        <li><a>info@thelegalshark.com</a></li>
+        <li><a>+20 100 000 0000</a></li>
+        <li><a>القاهرة، مصر</a></li>
+        <li><a>LinkedIn</a></li>
+        <li><a>Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 <span>The Legal Shark</span> | حنفي وسرحان للمحاماة. جميع الحقوق محفوظة.</span>
+    <span>For Startups and Businesses 🦈</span>
+  </div>
+</footer>
+
+<!-- ─── TOAST ─── -->
+
+<!-- ═══════════════════════════════════════════
+     إشعار النجاح (Toast Notification)
+     ═══════════════════════════════════════════ -->
+<div class="toast" id="toast">✅ تم إرسال طلبك بنجاح! سنتواصل معك خلال 24 ساعة.</div>
+<!-- ═══════════════════════════════════════════
+     رابط ملف JavaScript الخارجي
+     ═══════════════════════════════════════════ -->
+<script src="js/main.js"></script>
+</body>
+</html>
