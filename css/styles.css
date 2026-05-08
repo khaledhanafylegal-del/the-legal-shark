@@ -175,6 +175,7 @@ nav.scrolled .nav-logo img { height: 52px; }
   position: absolute;
   inset: 0;
   background: 
+    url('../الصور/خلفية-hero.png') center/cover no-repeat,
     radial-gradient(ellipse at 70% 50%, rgba(139, 26, 26, 0.15) 0%, transparent 60%),
     radial-gradient(ellipse at 20% 80%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
     linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #0d1f3c 100%);
