@@ -1,4 +1,4 @@
-﻿/* ══════════════════════════════════════════════
+/* ══════════════════════════════════════════════
    main.js - ملف JavaScript الرئيسي
    The Legal Shark | Hanafy & Sarhan Law Firm
    ══════════════════════════════════════════════ */
@@ -74,17 +74,22 @@ function showService(name) {
 
 // ─── SCROLL REVEAL ───
 function initReveal() {
-  const reveals = document.querySelectorAll('.reveal');
+  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        // Add a slight delay based on index for staggered effect if they are in the same view
+        entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
   
-  reveals.forEach(el => {
-    if (!el.classList.contains('visible')) observer.observe(el);
+  reveals.forEach((el, index) => {
+    // If multiple elements are close, stagger them
+    if (!el.classList.contains('visible')) {
+      observer.observe(el);
+    }
   });
 }
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -44,12 +44,17 @@
   <section id="hero-section">
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
+    <div class="bg-logo-large">
+      <img src="الصور/الشعار.jpg" alt="Background Logo">
+    </div>
+    <div class="glow-orb" style="top: 20%; right: 10%;"></div>
+    <div class="glow-orb" style="bottom: 10%; left: 5%; width: 400px; height: 400px; opacity: 0.1;"></div>
     <div class="hero-content">
       <div class="hero-text">
         <div class="hero-badge">حنفي وسرحان للمحاماة</div>
-        <h1 class="hero-title">
+        <h1 class="hero-title reveal">
           The Legal Shark
-          <span class="accent">محامون للشركات الناشئة</span>
+          <span class="accent">تأسيس الشركات وحمايتها</span>
         </h1>
         <p class="hero-subtitle">
           مكتب محاماة متخصص في القانون المصري للأعمال — نؤسّس شركتك، نحمي فكرتك، ونقف معك من البداية حتى النجاح.
@@ -124,13 +129,14 @@
         </div>
       </div>
     </div>
+    <div class="glow-orb" style="bottom: 0; left: -10%; width: 600px; height: 600px; opacity: 0.03;"></div>
   </div>
 
   <!-- Why Us -->
   <div class="why-section">
     <div class="section">
       <div class="why-grid">
-        <div class="why-text reveal">
+        <div class="why-text reveal-right">
           <span class="section-eyebrow">لماذا نحن؟</span>
           <h2 class="section-title">محامون يفهمون <span class="gold">لغة الأعمال</span></h2>
           <p>نحن لسنا مجرد مكتب محاماة — نحن شريك استراتيجي يفهم تحديات ريادة الأعمال في مصر. نتحدث لغتك، نحترم وقتك، ونقدم حلولاً عملية لا جلسات تنظير.</p>
@@ -144,7 +150,7 @@
             <div class="why-item"><div class="why-check">✓</div><div class="why-item-text">خبرة في قانون الاستثمار</div></div>
           </div>
         </div>
-        <div class="why-visual reveal">
+        <div class="why-visual reveal-left">
           <div class="testimonial-card">
             <p class="testimonial-text">فريق The Legal Shark أسّس شركتنا في أقل من أسبوعين، وقدّموا مشورة قانونية ساعدتنا في إغلاق جولة تمويلنا الأولى بنجاح. محترفون حقيقيون.</p>
             <div class="testimonial-author">
@@ -179,7 +185,7 @@
 <div class="page" id="page-about">
   <div class="about-hero">
     <div class="about-hero-content">
-      <div class="reveal">
+      <div class="reveal-right">
         <span class="section-eyebrow">من نحن</span>
         <h1 class="section-title">The Legal Shark<br><span class="gold">حنفي وسرحان للمحاماة</span></h1>
         <div class="divider" style="margin: 20px 0;"></div>
@@ -190,7 +196,7 @@
           تأسّسنا بهدف واضح: تغيير الصورة النمطية عن مكاتب المحاماة وتقديم خدمة قانونية عصرية، سريعة، وبأسعار شفافة تناسب روح الشركات الناشئة.
         </p>
       </div>
-      <div class="reveal" style="display:flex; align-items:center; justify-content:center;">
+      <div class="reveal-left" style="display:flex; align-items:center; justify-content:center;">
         <img src="الصور/الشعار-about.jpg" alt="The Legal Shark Logo" style="width:260px; filter:drop-shadow(0 0 30px rgba(201,168,76,0.4));">
       </div>
     </div>
@@ -823,13 +829,27 @@
      الفوتر (Footer)
      ═══════════════════════════════════════════ -->
 <footer>
+  <div class="footer-bg-logo">
+    <img src="الصور/الشعار-footer.png" alt="Footer Background Logo">
+  </div>
   <div class="footer-grid">
-    <div class="footer-brand">
-      <img src="الصور/الشعار-footer.png" alt="The Legal Shark Logo">
-      <p>مكتب متخصص في القانون المصري للأعمال والشركات الناشئة — حنفي وسرحان للمحاماة.</p>
+    <div class="footer-brand reveal">
+      <img src="الصور/الشعار-footer.png" alt="The Legal Shark Logo" class="footer-main-logo">
+      <div class="footer-brand-info">
+        <p>الشركة القانونية التقنية الرائدة في مصر — متخصصون في تأسيس وحماية الشركات الناشئة والأعمال.</p>
+        <div class="footer-contact-info">
+          <span>📍 القاهرة، المنطقة المالية</span>
+          <span>📞 +20 100 000 0000</span>
+        </div>
+      </div>
+      <div class="footer-social-mini">
+        <a href="#" class="mini-social">LinkedIn</a>
+        <a href="#" class="mini-social">Twitter</a>
+        <a href="#" class="mini-social">Facebook</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>الصفحات</h4>
+    <div class="footer-col reveal">
+      <h4>خريطة الموقع</h4>
       <ul>
         <li><a onclick="showPage('home')">الرئيسية</a></li>
         <li><a onclick="showPage('about')">من نحن</a></li>
@@ -838,30 +858,31 @@
         <li><a onclick="showPage('contact')">تواصل معنا</a></li>
       </ul>
     </div>
-    <div class="footer-col">
-      <h4>خدماتنا</h4>
+    <div class="footer-col reveal">
+      <h4>خدمات التأسيس</h4>
       <ul>
-        <li><a onclick="showPage('services')">تأسيس الشركات</a></li>
-        <li><a onclick="showPage('services')">العقود التجارية</a></li>
-        <li><a onclick="showPage('services')">الملكية الفكرية</a></li>
-        <li><a onclick="showPage('services')">صفقات الاستثمار</a></li>
-        <li><a onclick="showPage('services')">النزاعات التجارية</a></li>
+        <li><a onclick="showPage('services')">تأسيس شركات (LLC)</a></li>
+        <li><a onclick="showPage('services')">شركات المساهمة</a></li>
+        <li><a onclick="showPage('services')">المنشآت الفردية</a></li>
+        <li><a onclick="showPage('services')">قانون الاستثمار</a></li>
+        <li><a onclick="showPage('services')">العلامات التجارية</a></li>
       </ul>
     </div>
-    <div class="footer-col">
-      <h4>تواصل</h4>
-      <ul>
-        <li><a>info@thelegalshark.com</a></li>
-        <li><a>+20 100 000 0000</a></li>
-        <li><a>القاهرة، مصر</a></li>
-        <li><a>LinkedIn</a></li>
-        <li><a>Facebook</a></li>
-      </ul>
+    <div class="footer-col reveal">
+      <h4>المقر الرئيسي</h4>
+      <div class="footer-map-placeholder">
+        <div class="map-inner">
+          <span class="map-dot"></span>
+          <p>مبنى حنفي وسرحان، القاهرة</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 <span>The Legal Shark</span> | حنفي وسرحان للمحاماة. جميع الحقوق محفوظة.</span>
-    <span>For Startups and Businesses 🦈</span>
+    <div class="footer-bottom-content">
+      <span>© 2024 <span>The Legal Shark</span> | Hanafy & Sarhan. جميع الحقوق محفوظة.</span>
+      <span class="footer-tagline">Building the Future of Law & Tech 🦈</span>
+    </div>
   </div>
 </footer>
 
