@@ -207,8 +207,6 @@ nav.scrolled .nav-logo img { height: 52px; }
   opacity: 0.05;
   pointer-events: none;
   z-index: 1;
-  filter: grayscale(1) contrast(1.2);
-  mix-blend-mode: screen;
   animation: float-large 15s ease-in-out infinite;
 }
 
@@ -1423,7 +1421,6 @@ footer {
   opacity: 0.03;
   pointer-events: none;
   z-index: 0;
-  filter: grayscale(1);
 }
 
 .footer-bg-logo img { width: 100%; height: 100%; object-fit: contain; }
@@ -1788,5 +1785,4 @@ footer {
 .hero-logo-img,
 .footer-brand img {
   background: transparent !important;
-  mix-blend-mode: screen;
 }
