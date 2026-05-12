@@ -166,6 +166,33 @@
     </div>
   </div>
 
+  <!-- Packages Preview Section -->
+  <div style="padding: 100px 40px; background: rgba(17,32,64,0.3); position: relative; overflow: hidden;">
+    <div class="section">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">باقات التأسيس</span>
+        <h2 class="section-title">اختر الباقة التي <span class="gold">تناسب مرحلة نموك</span></h2>
+      </div>
+      <div class="packages-preview-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px;">
+        <div class="package-mini-card reveal" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(201,168,76,0.2); padding: 30px; border-radius: 12px; text-align: center; transition: 0.3s;">
+          <h3 style="font-family: 'Cinzel', serif; color: var(--white-pure); margin-bottom: 10px;">القرش الصغير</h3>
+          <span style="color: var(--gold); font-size: 0.8rem; letter-spacing: 2px;">STARTER</span>
+        </div>
+        <div class="package-mini-card reveal" style="background: rgba(201,168,76,0.05); border: 1px solid var(--gold); padding: 30px; border-radius: 12px; text-align: center; transition: 0.3s; transform: scale(1.05);">
+          <h3 style="font-family: 'Cinzel', serif; color: var(--gold-light); margin-bottom: 10px;">القرش الأزرق</h3>
+          <span style="color: var(--gold); font-size: 0.8rem; letter-spacing: 2px;">GROWTH</span>
+        </div>
+        <div class="package-mini-card reveal" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(201,168,76,0.2); padding: 30px; border-radius: 12px; text-align: center; transition: 0.3s;">
+          <h3 style="font-family: 'Cinzel', serif; color: var(--white-pure); margin-bottom: 10px;">القرش الأبيض</h3>
+          <span style="color: var(--gold); font-size: 0.8rem; letter-spacing: 2px;">ENTERPRISE</span>
+        </div>
+      </div>
+      <div style="text-align: center;" class="reveal">
+        <a href="#" class="btn-secondary" onclick="showPage('packages')" style="padding: 12px 40px; font-weight: 700;">تعرف أكثر على تفاصيل الباقات ←</a>
+      </div>
+    </div>
+  </div>
+
   <!-- CTA -->
   <div style="padding: 80px 40px; text-align: center; background: linear-gradient(135deg, rgba(17,32,64,0.8), rgba(10,22,40,0.9));">
     <div class="reveal">
@@ -197,7 +224,7 @@
         </p>
       </div>
       <div class="reveal-left" style="display:flex; align-items:center; justify-content:center;">
-        <img src="سرحان وحنفي للمحامه.png" alt="The Legal Shark Logo" style="width:260px;">
+        <img src="سرحان وحنفي للمحامه.png" alt="The Legal Shark Logo" style="width:400px; max-width: 90%; filter:drop-shadow(0 0 50px rgba(201,168,76,0.3));">
       </div>
     </div>
   </div>
@@ -229,13 +256,12 @@
     transform: translateY(-8px);
     box-shadow: 0 32px 60px rgba(0,0,0,0.4), 0 0 40px rgba(201,168,76,0.1);
   }
-  .team-card-v3 .card-photo {
+  .team-card-v3 img {
     width: 100%;
     height: 420px;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     display: block;
-    background: rgba(10,22,40,0.6);
     border-bottom: 1px solid rgba(201,168,76,0.2);
   }
   .team-card-v3 .card-body {
